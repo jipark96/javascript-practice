@@ -1,19 +1,9 @@
-const player ={
-  name : "jihyun",
-  hello : function(otherPersonsName){
-    console.log("hello "+ otherPersonsName+ " nice to meet you!" )
-  }
-};
+const title = document.querySelector("div.hello");
 
-function plus(a,b) {
-  console.log(a + b);
+function handleTitleCLick() {
+  console.log("title was clicked!");
+  title.style.color = "blue";
 }
 
-function divide(a,b){
-  console.log(a/b);
-}
 
-console.log(player.name);
-player.hello("jipark");
-plus(5,9);
-divide(98,2);
+title.addEventListener("click",handleTitleCLick);
